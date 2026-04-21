@@ -3,8 +3,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>BetterSleep — Coming Soon</title>
-<meta name="description" content="Improve your sleep quality with smart tracking, bedtime reminders, and relaxing sounds. Coming soon." />
+<title>BetterSleep — Improve Your Sleep Quality</title>
+<meta name="description" content="Improve your sleep quality with smart tracking, bedtime reminders, and relaxing sounds." />
+<meta property="og:title" content="BetterSleep" />
+<meta property="og:description" content="Improve your sleep quality." />
 <link rel="canonical" href="https://sonsoftwareapp.com/apps/bettersleep/" />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
@@ -30,6 +32,7 @@
 </script>
 <style>
   .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .hero-gradient { background: linear-gradient(135deg, #4f46e5 0%, #3525cd 100%); }
 </style>
 </head>
 <body class="bg-surface font-body text-on-surface">
@@ -47,56 +50,81 @@
     </div>
     <div class="hidden md:flex items-center gap-8">
       <a class="text-slate-600 font-medium hover:scale-105 transition-transform duration-200" href="/">All Apps</a>
+      <a class="text-slate-600 font-medium hover:scale-105 transition-transform duration-200" href="/apps/bettersleep/support">Support</a>
+      <a class="text-slate-600 font-medium hover:scale-105 transition-transform duration-200" href="/apps/bettersleep/privacy-policy">Privacy</a>
     </div>
     <a href="mailto:phanduyson@gmail.com" class="bg-primary text-on-primary px-6 py-2 rounded-full font-bold text-sm hover:scale-105 active:scale-95 transition-all duration-200">Contact</a>
   </nav>
 </header>
 
 <main>
-  <!-- Coming Soon Hero -->
-  <section class="max-w-4xl mx-auto px-6 text-center pt-48 pb-24">
-    <div class="inline-flex items-center px-4 py-2 rounded-full bg-amber-100 text-amber-800 text-sm font-bold tracking-widest uppercase mb-8">
-      Coming Soon
+  <!-- Hero -->
+  <section class="hero-gradient min-h-[600px] flex items-center justify-center px-6 pt-24 pb-20 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+      <div class="absolute bottom-0 right-0 w-96 h-96 bg-primary-fixed rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
     </div>
-    <h1 class="font-headline text-6xl md:text-8xl font-extrabold tracking-tight text-on-surface mb-6 leading-[1.1]">BetterSleep</h1>
-    <p class="text-on-surface-variant text-xl md:text-2xl max-w-2xl mx-auto mb-12 leading-relaxed">
-      Improve your sleep quality with smart tracking, bedtime reminders, and relaxing sounds. Launching soon.
-    </p>
-    <a href="mailto:phanduyson@gmail.com?subject=BetterSleep Waitlist" class="inline-block bg-primary text-on-primary px-10 py-5 rounded-full font-bold text-xl shadow-[0_10px_30px_-10px_rgba(53,37,205,0.4)] hover:scale-105 active:scale-95 transition-all">
-      Join the Waitlist
-    </a>
+    <div class="max-w-5xl w-full flex flex-col items-center text-center relative z-10">
+      <h1 class="text-white font-headline font-extrabold text-6xl md:text-8xl tracking-tight mb-6">BetterSleep</h1>
+      <p class="text-primary-fixed font-body text-xl md:text-2xl max-w-2xl mb-12 leading-relaxed">
+        Improve your sleep quality with smart tracking, bedtime reminders, and relaxing sounds.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 items-center">
+        <a href="https://apps.apple.com/vn/app/better-sleep-365/id6761657106" target="_blank" rel="noopener" class="bg-surface-container-lowest text-primary px-8 py-4 rounded-full font-bold text-lg shadow-[0_10px_30px_-10px_rgba(0,0,0,0.2)] hover:scale-105 active:scale-95 transition-all duration-200 flex items-center gap-3">
+          <span class="material-symbols-outlined">phone_iphone</span>
+          Download on App Store
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.sonsoftwareapp.bettersleep" target="_blank" rel="noopener" class="border-2 border-white/30 text-white px-8 py-4 rounded-full font-bold text-lg backdrop-blur-sm hover:bg-white/10 hover:scale-105 active:scale-95 transition-all duration-200 flex items-center gap-3">
+          <span class="material-symbols-outlined">play_apps</span>
+          Get it on Google Play
+        </a>
+      </div>
+    </div>
   </section>
 
-  <!-- Preview Features -->
-  <section class="py-24 px-6 bg-surface-container-low">
+  <!-- Screenshots -->
+  <section class="py-20 px-6 bg-surface overflow-hidden">
+    <div class="max-w-4xl mx-auto text-center mb-12">
+      <h2 class="font-headline font-bold text-3xl text-on-background mb-3">See it in action</h2>
+      <p class="text-on-surface-variant">A closer look at BetterSleep.</p>
+    </div>
+    <div class="flex gap-6 justify-center flex-wrap">
+      <img src="/assets/images/bettersleep/screenshot1.png" alt="BetterSleep screenshot 1" class="h-[480px] w-auto rounded-3xl shadow-2xl object-cover"/>
+      <img src="/assets/images/bettersleep/screenshot2.png" alt="BetterSleep screenshot 2" class="h-[480px] w-auto rounded-3xl shadow-2xl object-cover hidden sm:block"/>
+      <img src="/assets/images/bettersleep/screenshot3.png" alt="BetterSleep screenshot 3" class="h-[480px] w-auto rounded-3xl shadow-2xl object-cover hidden md:block"/>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-32 px-6 bg-surface">
     <div class="max-w-4xl mx-auto">
-      <div class="mb-16 text-center">
-        <h2 class="font-headline font-bold text-4xl text-on-background mb-4">What to Expect</h2>
-        <p class="text-on-surface-variant text-lg">A preview of what's coming.</p>
+      <div class="mb-20">
+        <h2 class="font-headline font-bold text-4xl text-on-background mb-4">Sleep Better Tonight</h2>
+        <p class="text-on-surface-variant text-lg">Everything you need to understand and improve your sleep.</p>
       </div>
       <div class="grid grid-cols-1 gap-8">
-        <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-[0_10px_30px_-10px_rgba(70,69,85,0.08)] flex flex-col md:flex-row md:items-center gap-8">
+        <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-[0_10px_30px_-10px_rgba(70,69,85,0.08)] hover:scale-[1.01] transition-all duration-300 flex flex-col md:flex-row md:items-center gap-8">
           <div class="w-16 h-16 bg-surface-container flex items-center justify-center rounded-2xl text-4xl shrink-0">😴</div>
           <div>
             <h3 class="font-headline font-bold text-2xl text-on-surface mb-2">Sleep Tracking</h3>
             <p class="text-on-surface-variant text-lg leading-relaxed">Automatically track your sleep duration and quality each night with detailed morning reports.</p>
           </div>
         </div>
-        <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-[0_10px_30px_-10px_rgba(70,69,85,0.08)] flex flex-col md:flex-row md:items-center gap-8">
+        <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-[0_10px_30px_-10px_rgba(70,69,85,0.08)] hover:scale-[1.01] transition-all duration-300 flex flex-col md:flex-row md:items-center gap-8">
           <div class="w-16 h-16 bg-surface-container flex items-center justify-center rounded-2xl text-4xl shrink-0">🌙</div>
           <div>
             <h3 class="font-headline font-bold text-2xl text-on-surface mb-2">Bedtime Reminders</h3>
             <p class="text-on-surface-variant text-lg leading-relaxed">Smart reminders to help you wind down and go to bed on time, tailored to your schedule.</p>
           </div>
         </div>
-        <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-[0_10px_30px_-10px_rgba(70,69,85,0.08)] flex flex-col md:flex-row md:items-center gap-8">
+        <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-[0_10px_30px_-10px_rgba(70,69,85,0.08)] hover:scale-[1.01] transition-all duration-300 flex flex-col md:flex-row md:items-center gap-8">
           <div class="w-16 h-16 bg-surface-container flex items-center justify-center rounded-2xl text-4xl shrink-0">🎵</div>
           <div>
             <h3 class="font-headline font-bold text-2xl text-on-surface mb-2">Relaxing Sounds</h3>
             <p class="text-on-surface-variant text-lg leading-relaxed">Fall asleep faster with white noise, rain, ocean waves, and nature soundscapes.</p>
           </div>
         </div>
-        <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-[0_10px_30px_-10px_rgba(70,69,85,0.08)] flex flex-col md:flex-row md:items-center gap-8">
+        <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-[0_10px_30px_-10px_rgba(70,69,85,0.08)] hover:scale-[1.01] transition-all duration-300 flex flex-col md:flex-row md:items-center gap-8">
           <div class="w-16 h-16 bg-surface-container flex items-center justify-center rounded-2xl text-4xl shrink-0">📈</div>
           <div>
             <h3 class="font-headline font-bold text-2xl text-on-surface mb-2">Sleep Insights</h3>
@@ -106,8 +134,22 @@
       </div>
     </div>
   </section>
+
+  <!-- CTA -->
+  <section class="py-24 px-6 bg-surface-container-low">
+    <div class="max-w-4xl mx-auto bg-primary rounded-[2.5rem] p-12 md:p-20 text-center relative overflow-hidden">
+      <div class="relative z-10">
+        <h2 class="text-white font-headline font-extrabold text-4xl md:text-5xl mb-8">Sleep better, live better</h2>
+        <p class="text-on-primary-container text-xl mb-12 max-w-xl mx-auto">Download BetterSleep and wake up refreshed every morning.</p>
+        <a href="https://apps.apple.com/vn/app/better-sleep-365/id6761657106" target="_blank" rel="noopener" class="inline-block bg-white text-primary px-10 py-5 rounded-full font-bold text-xl shadow-xl hover:scale-105 active:scale-95 transition-all">Download Free</a>
+      </div>
+      <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+      <div class="absolute bottom-0 left-0 w-64 h-64 bg-indigo-900/20 rounded-full blur-3xl -ml-32 -mb-32"></div>
+    </div>
+  </section>
 </main>
 
+<!-- Footer -->
 <footer class="w-full py-12 px-8 bg-slate-50 border-t border-slate-100">
   <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
     <div class="flex flex-col items-center md:items-start gap-2">
