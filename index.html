@@ -63,6 +63,7 @@
   <div class="hidden md:flex items-center gap-8">
     <a class="text-indigo-700 font-bold transition-transform duration-200 hover:scale-105" href="#apps">Apps</a>
     <a class="text-slate-600 font-medium transition-transform duration-200 hover:scale-105" href="/services/">Services</a>
+    <a class="text-slate-600 font-medium transition-transform duration-200 hover:scale-105" href="/about/">About</a>
     <a class="text-slate-600 font-medium transition-transform duration-200 hover:scale-105" href="mailto:phanduyson@gmail.com">Contact</a>
   </div>
   <a href="mailto:phanduyson@gmail.com" class="bg-indigo-600 text-white px-5 py-2 rounded-full font-medium text-sm transition-all active:scale-95 hover:shadow-lg">Contact</a>
@@ -74,9 +75,13 @@
     <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface mb-6 leading-[1.1]">
       Simple apps for<br/>better living
     </h1>
-    <p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto mb-10 font-body">
+    <p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto mb-6 font-body">
       We craft intentional software that stays out of your way and helps you focus on what truly matters.
     </p>
+    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container text-on-surface-variant text-sm font-semibold mb-10">
+      <span class="material-symbols-outlined text-indigo-600" style="font-size:16px;">verified</span>
+      Founded by a software engineer with 20+ years of experience
+    </div>
     <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
       <a href="#apps" class="hero-gradient text-white px-8 py-3.5 rounded-full font-semibold text-lg transition-all hover:scale-105 active:scale-95 shadow-[0_10px_30px_-10px_rgba(79,70,229,0.4)]">
         Explore Apps
@@ -176,7 +181,7 @@
       <h2 class="font-headline text-4xl font-extrabold text-on-surface mb-3">Our Services</h2>
       <p class="text-on-surface-variant text-lg">Beyond apps — we teach, build, and connect.</p>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
       <!-- Coding for Kids -->
       <a href="/services/#coding" class="block no-underline">
@@ -254,6 +259,63 @@
         </div>
       </a>
 
+      <!-- CTO-as-a-Service -->
+      <a href="/services/#cto" class="block no-underline">
+        <div class="bg-surface-container-lowest rounded-3xl p-8 shadow-[0_10px_30px_-10px_rgba(70,69,85,0.08)] transition-all hover:scale-[1.02] h-full flex flex-col">
+          <div class="mb-6 w-16 h-16 rounded-2xl bg-sky-50 flex items-center justify-center">
+            <span class="material-symbols-outlined text-sky-600 text-3xl">architecture</span>
+          </div>
+          <div class="inline-flex items-center px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold tracking-wide mb-4 w-fit">
+            CONSULTING
+          </div>
+          <h3 class="font-headline text-2xl font-bold text-on-surface mb-3">CTO-as-a-Service</h3>
+          <p class="text-on-surface-variant font-body mb-8 leading-relaxed flex-1">
+            Senior technical leadership without the full-time cost. Strategy, architecture, and team guidance — backed by 20+ years of experience.
+          </p>
+          <span class="w-full py-3 rounded-xl border border-sky-200 text-sky-700 font-semibold text-center transition-all hover:bg-sky-600 hover:text-white hover:border-sky-600 block">
+            Learn More
+          </span>
+        </div>
+      </a>
+
+      <!-- Developer Career Coaching -->
+      <a href="/services/#career" class="block no-underline">
+        <div class="bg-surface-container-lowest rounded-3xl p-8 shadow-[0_10px_30px_-10px_rgba(70,69,85,0.08)] transition-all hover:scale-[1.02] h-full flex flex-col">
+          <div class="mb-6 w-16 h-16 rounded-2xl bg-amber-50 flex items-center justify-center">
+            <span class="material-symbols-outlined text-amber-600 text-3xl">trending_up</span>
+          </div>
+          <div class="inline-flex items-center px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold tracking-wide mb-4 w-fit">
+            COACHING
+          </div>
+          <h3 class="font-headline text-2xl font-bold text-on-surface mb-3">Developer Coaching</h3>
+          <p class="text-on-surface-variant font-body mb-8 leading-relaxed flex-1">
+            Level up from junior to senior. Career roadmapping, interview prep, and real industry insight from a 20-year software veteran.
+          </p>
+          <span class="w-full py-3 rounded-xl border border-amber-200 text-amber-700 font-semibold text-center transition-all hover:bg-amber-600 hover:text-white hover:border-amber-600 block">
+            Learn More
+          </span>
+        </div>
+      </a>
+
+      <!-- Code & Architecture Audit -->
+      <a href="/services/#audit" class="block no-underline">
+        <div class="bg-surface-container-lowest rounded-3xl p-8 shadow-[0_10px_30px_-10px_rgba(70,69,85,0.08)] transition-all hover:scale-[1.02] h-full flex flex-col">
+          <div class="mb-6 w-16 h-16 rounded-2xl bg-slate-100 flex items-center justify-center">
+            <span class="material-symbols-outlined text-slate-600 text-3xl">fact_check</span>
+          </div>
+          <div class="inline-flex items-center px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-bold tracking-wide mb-4 w-fit">
+            AUDIT
+          </div>
+          <h3 class="font-headline text-2xl font-bold text-on-surface mb-3">Code & Architecture Audit</h3>
+          <p class="text-on-surface-variant font-body mb-8 leading-relaxed flex-1">
+            A senior review of your codebase — performance, security, and scalability issues identified with a clear remediation roadmap.
+          </p>
+          <span class="w-full py-3 rounded-xl border border-slate-200 text-slate-700 font-semibold text-center transition-all hover:bg-slate-700 hover:text-white hover:border-slate-700 block">
+            Learn More
+          </span>
+        </div>
+      </a>
+
     </div>
   </section>
 
@@ -304,6 +366,7 @@
     <div class="flex items-center gap-8">
       <a class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors" href="#apps">Apps</a>
       <a class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors" href="/services/">Services</a>
+      <a class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors" href="/about/">About</a>
       <a class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors" href="mailto:phanduyson@gmail.com">Contact</a>
     </div>
   </div>
